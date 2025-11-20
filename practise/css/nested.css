@@ -1,0 +1,26 @@
+.horizontal{
+    width: 200px;
+    display:inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+img{
+    width:200px;
+}
+.videotitle{
+    font-weight:bold;
+    font-size: large;
+}
+.channel{
+    font-weight: medium;
+    font-size: medium;
+    color: grey;
+}
+.description{
+    font-weight: lighter;
+    font-size: small;
+    color: gray;
+}
+p{
+    margin: 5px;
+}

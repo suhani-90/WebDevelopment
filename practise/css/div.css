@@ -1,0 +1,21 @@
+*{
+    font-family: ROBOTO;
+    font-weight: medium;
+}
+div{
+    width:200px;
+    height:400px;
+    display:inline-block;
+    margin-left: 10px;
+}
+button{
+    color:white;
+    background-color: rgb(15, 104, 199);
+    display: block;
+    padding:10px;
+}
+img{
+   
+    width: 150px;
+    height: 200px;
+}

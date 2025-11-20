@@ -1,0 +1,24 @@
+let colors=["red","blue","white","orange","black","pink"];
+let numbers=[1,2,3,4,5,6,7,8,5,9];
+console.log(colors);
+colors.push("brown");
+console.log(colors);
+colors.pop();
+console.log(colors);
+colors.unshift("brown");
+console.log(colors);
+colors.shift();
+console.log(colors);
+console.log(typeof(colors));
+colors.toString();
+console.log(colors);
+console.log(typeof(colors));
+let something=colors.concat(numbers);
+console.log(something);
+console.log(colors.slice(2,5));
+numbers.splice(2,2);
+
+let companies=["bloomberg","microsoft","uber","google","ibm","netflix"];
+companies.shift();
+companies.splice(1,1,"ola");
+companies.push("amazon");

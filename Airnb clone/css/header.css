@@ -1,0 +1,181 @@
+.Fixedheader{
+    position: fixed;
+    background-color: white;
+    top:0;
+    right:0;
+    left:0;
+}.header{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    border-bottom-color:rgb(195, 195, 195);
+}.mainheader{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.rightsection{
+    display:flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.middlesection{
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.airnblogo{
+    height:50px;
+    width:200px;
+}
+.middlesection button{
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius:25px;
+    background-color: white;
+    border:none;
+    font-weight: 400;
+    font-size: 15px;
+}
+.middlesection button:hover{
+    background-color: rgb(225, 221, 221);
+}
+.middlesection button:active{
+    background-color: white;
+    font-weight: 600;
+}
+
+.airnbyour{
+    height:50px;
+    white-space: nowrap;
+    border-radius:25px;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.airnbyour,.worldbutton{
+    background-color:white;
+    border:none;
+    transition:box-shadow,0.15s;
+}
+.airnbyour:hover,.worldbutton:hover{
+    box-shadow:2px 2px 2px rgba(0,0,0,0.15);
+}
+.worldbutton{
+    height:30px;
+    width:30px;
+    align-items: center;
+    vertical-align: top;
+    border-radius:15px;
+    margin-top:10px;
+    margin-right: 10px;
+    
+}
+.worldicon{
+    width:25px;
+    height:25px;
+}
+.profilebutton img{
+    width:50px;
+    height:50px;
+    margin-left:3px;
+    margin-right:3px;
+}
+.profilebutton{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:3px;
+    align-items: center;
+    background-color:white;
+    border-radius:25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 185, 185);
+    transition:box-shadow,0.15s;
+}
+.profilebutton:hover{
+    box-shadow:2px 2px 2px rgba(0,0,0,0.15);
+}
+.Searchbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.searchbutton{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left:none;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:1px;
+}
+.searchicon{
+    height:25px;
+    width:25px;
+    border-radius: 30px;
+}
+.searchbutton:hover{
+    background-color: white;
+}
+.Searchbar button{
+    background-color: white;
+    padding:10px;
+    margin-left:-1px;
+    margin-right:-1px;
+    border-style: solid;
+    border-width:1px;
+    border-color:rgb(211, 210, 210);
+}
+.Searchbar button:hover{
+    background-color: rgb(142, 141, 141);
+    border-radius:25px;
+}
+/*body slider*/
+
+.Slidersection{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.slider{
+    Flex:2;
+    margin-left: 100px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.sliderbuttons{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+}
+
+.Slidersection button{
+    background-color:white;
+    white-space: nowrap;
+    border-radius:25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 185, 185);
+    transition:box-shadow,0.15s;
+    height:50px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.Slidersection button:hover{
+    box-shadow:2px 2px 2px rgba(0,0,0,0.15);
+}
+.slider p{
+    margin-top: 2px;
+}
+.slider div:hover{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(171, 171, 171);
+}

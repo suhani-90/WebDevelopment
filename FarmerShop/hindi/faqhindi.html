@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/homepage1.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--cards-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <style>
+  .faq-heading{
+        border-bottom: #777;
+        padding: 20px 60px;
+    }
+    .faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .hr-line{
+      width: 60%;
+      margin: auto;
+      
+    }
+    /* Style the buttons that are used to open and close the faq-page body */
+    .faq-page {
+        /* background-color: #eee; */
+        color: #444;
+        cursor: pointer;
+        padding: 30px 20px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+    }
+    .faq-body{
+        margin: auto;
+        /* text-align: center; */
+       width: 50%; 
+       padding: auto;
+       
+    }
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .faq-page:hover {
+        background-color: #F9F9F9;
+    }
+    /* Style the faq-page panel. Note: hidden by default */
+    .faq-body {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    .faq-page:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+    
+    .relative {
+         left: 5%;
+         right: 5%;
+         text-align: left;
+    }
+    
+    .carousel-item {
+         height: 100%;
+         margin-top:10px;
+         width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+  <h5 class="w3-bar-item">मेन्यू</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'BuyerFAQs')">खरीदार अक्सर पूछे जाने वाले प्रश्न</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'SellerFAQs')">विक्रेता अक्सर पूछे जाने वाले प्रश्न</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'GeneralQueries')">सामान्य प्रश्न</button>
+   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TrustandSafety')">विश्वास और सुरक्षा</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'LegalandPrivacyInformation')">कानूनी और गोपनीयता जानकारी</button>
+</div>
+
+<div style="margin-left:130px">
+  
+  <div id="BuyerFAQs" class="w3-container city" style="display:none">
+   <main>
+        <h1 class="faq-heading">अक्सर पूछे जाने वाले प्रश्न</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">क्या फार्मर्स टच के विक्रेता अंतरराष्ट्रीय स्तर पर जहाज चलाते हैं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p></p>
+<p>वर्तमान में, फार्मर्स टच पर विक्रेता केवल भारत में ही शिप करते हैं।</p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">मुझे एक ही उत्पाद की अलग-अलग कीमतें क्यों दिखाई देती हैं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>हां, खरीदने या बेचने के उद्देश्य से खाता बनाना आवश्यक है। लॉग-इन उपयोगकर्ता के रूप में खरीदारी करना तेज़ और सुविधाजनक है और अतिरिक्त सुरक्षा भी प्रदान करता है।
+आपके पास अनुशंसाओं और त्वरित चेक-आउट सहित व्यक्तिगत खरीदारी अनुभव तक पहुंच होगी।</p>
+                </div>
+            </div>
+
+<hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">क्या विक्रेता की रिटर्न पॉलिसी में उल्लिखित समय अवधि के बाद आइटम वापस किए जा सकते हैं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>नहीं, विक्रेता की वापसी नीति में उल्लिखित समय अवधि के बाद विक्रेता रिटर्न स्वीकार नहीं कर पाएंगे।</p>
+                </div>
+
+
+<hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">क्या मैं अपनी व्यक्तिगत जानकारी हटा सकता हूँ?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>एक बार सत्यापित हो जाने के बाद, यह तब तक मान्य रहता है जब तक आप अपना खाता हटा नहीं देते।
+यदि आपने प्लेटफॉर्म पर किसी खरीदार के साथ बातचीत की है, तो हम कानून द्वारा आवश्यक उचित समय के लिए आपके व्यक्तिगत विवरण को बनाए रखने का अधिकार सुरक्षित रखते हैं। निश्चिंत रहें, आपकी जानकारी हमारे पास पूरी तरह सुरक्षित है
+और किसी के साथ साझा नहीं किया जाएगा।</p>
+                </div>
+ 
+            </div>
+        
+                </div>
+            </div>
+        </section>
+    </main>
+
+  </div>
+
+  <div id="SellerFAQs" class="w3-container city" style="display:none">
+   <main>
+        <h1 class="faq-heading"></h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">मैं फार्मर टच पर कौन सी चीजें बेच सकता हूं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>आप सभी प्रकार के फल, सब्जियां और फसलें बेच सकते हैं।</p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">उत्पादों को कैसे बेचें?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>होम पेज पर उल्लिखित विक्रेता गाइड का पालन करें</p>
+                </div>
+
+
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">मैं फसल की उपज कैसे बढ़ा सकता हूं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>फसल की पैदावार बढ़ाने के उपाय:
+                        1. अच्छी गुणवत्ता वाले बीज प्राप्त करें
+                        2. उचित सिंचाई
+                        3.उपयुक्त उर्वरकों और कीटनाशकों का उपयोग करना</p>
+                    <p>फार्मर टच पर खुद को रजिस्टर करने के लिए आप यहां क्लिक कर सकते हैं <a href="login.html"></a></p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">मैं अपना खाता कैसे रद्द कर सकता हूं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>आप किसी भी समय बेचना बंद कर सकते हैं.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+.</p>
+  </div>
+
+  <div id="GeneralQueries" class="w3-container city" style="display:none">
+    <main>
+        <h1 class="faq-heading"></h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">मैं फार्मर टच पर कौन सी चीजें बेच सकता हूं?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">मैं फार्मर टच पर कैसे पंजीकरण कर सकता हूं</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>फार्मर टच पर खुद को रजिस्टर करने के लिए आप यहां क्लिक कर सकते हैं <a href="login.html"></a></p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+.</p>
+  </div>
+
+ <div id="TrustandSafety" class="w3-container city" style="display:none">
+   <div id="LegalandPrivacyInformation" class="w3-container city" style="display:none">
+</div>
+
+
+
+ 
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+<script>
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
+
+
+   
+</body>
+</html>

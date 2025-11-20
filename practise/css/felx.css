@@ -1,0 +1,19 @@
+div{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.space1{
+    justify-content:space-between;
+}
+.space2{
+    justify-content: space-between;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+ 
+}

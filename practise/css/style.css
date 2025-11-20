@@ -1,0 +1,15 @@
+#toggle{
+    height:50px;
+    width:100px;
+    border-radius: 10%;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color:black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ Foodie Express</div>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Delicious Meals Delivered Fast</h1>
+            <p>Craving something good? Order now and enjoy hot food in 30 minutes!</p>
+            <a href="#menu" class="cta-btn">Browse Menu</a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>🍔 Our Bestsellers</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="pizza1.jpg" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>410</p>
+                <button onclick="addToCart('Margherita Pizza', 10)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="pizza2.jpg" alt="Burger">
+                <h3>Cheese Burger</h3>
+                <p>280</p>
+                <button onclick="addToCart('Cheese Burger', 8)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="veggieoverloaded.png" alt="Pasta">
+                <h3>Pasta Alfredo</h3>
+                <p>109</p>
+                <button onclick="addToCart('Pasta Alfredo', 9)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="order" id="order">
+        <h2>📝 Place Your Order</h2>
+        <form onsubmit="return placeOrder()">
+            <input type="text" placeholder="Your Name" required id="name">
+            <input type="text" placeholder="Delivery Address" required id="address">
+            <button class="submit-btn" type="submit">Place Order</button>
+        </form>
+        <div class="confirmation" id="confirmation"></div>
+    </section>
+
+    <div class="cart-panel" id="cart-panel">
+        <h3>🛒 Your Cart</h3>
+        <div id="cart-items"></div>
+        <p><strong>Total: <span id="cart-total">0</span></strong></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Foodie Express</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

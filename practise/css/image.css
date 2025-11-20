@@ -1,0 +1,22 @@
+img{
+    width: 200px;
+    height:300px;
+    object-fit:cover;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+input{
+    margin-bottom: 20px;
+    border-width:2px;
+    border-color: chocolate;
+    display:block;
+}
+button{
+    border-radius:15px;
+    color: white;
+    background-color: rgb(1, 148, 234);
+    display:block;
+    margin-bottom: 50px;
+
+} 

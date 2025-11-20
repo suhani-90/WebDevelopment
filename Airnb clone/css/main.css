@@ -1,0 +1,45 @@
+body{
+    font-family: Roboto,Arial;
+}
+.places{
+    margin-top:250px;
+    margin-left:50px;
+    margin-right:100px;
+}
+.placescard{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    column-gap:30px;
+    row-gap: 20px;
+}
+.placepicture img{
+    height:250px;
+    width:250px;
+}
+.placeinfo{
+    display:flex;
+    flex-direction: row;
+    margin-left: 5px;
+}
+.prcie{
+    display:inline-block;
+}
+.placeinformation{
+    flex:1;
+}
+.location{
+    font-weight:500;
+    font-size:20px;
+}
+.distance{
+    font-weight: 400;
+    color: rgb(133, 133, 133);
+}
+.date{
+    font-weight: 400;
+    color: rgb(133, 133, 133);
+}
+.price{
+    font-weight:500;
+    font-size:16px; 
+}

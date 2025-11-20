@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/homepage1.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--cards-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <style>
+  .faq-heading{
+        border-bottom: #777;
+        padding: 20px 60px;
+    }
+    .faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .hr-line{
+      width: 60%;
+      margin: auto;
+      
+    }
+    /* Style the buttons that are used to open and close the faq-page body */
+    .faq-page {
+        /* background-color: #eee; */
+        color: #444;
+        cursor: pointer;
+        padding: 30px 20px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+    }
+    .faq-body{
+        margin: auto;
+        /* text-align: center; */
+       width: 50%; 
+       padding: auto;
+       
+    }
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .faq-page:hover {
+        background-color: #F9F9F9;
+    }
+    /* Style the faq-page panel. Note: hidden by default */
+    .faq-body {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    .faq-page:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+    
+    .relative {
+         left: 5%;
+         right: 5%;
+         text-align: left;
+    }
+    
+    .carousel-item {
+         height: 100%;
+         margin-top:10px;
+         width: 100%;
+    }
+   
+  </style>
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+  <h5 class="w3-bar-item">Menu</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'BuyerFAQs')">Buyer FAQ's</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'SellerFAQs')">Seller FAQ's</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'GeneralQueries')">General Queries</button>
+   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TrustandSafety')">Trust and Safety</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'LegalandPrivacyInformation')">Legal and Privacy Information</button>
+</div>
+
+<div style="margin-left:130px">
+  
+  <div id="BuyerFAQs" class="w3-container city" style="display:none">
+   <main>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">Do sellers on Farmers Touch ship internationally?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p></p>
+<p>Currently, sellers on Farmers Touch only ship within India.</p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">Why do I see different prices for the same product?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Price discrimination is a selling strategy that charges customers different prices for the same product or service based on what the seller thinks they can get the customer to agree to. Also, according to the quality of the product prices of the product may differ.</p>
+                </div>
+            </div>
+
+<hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">Can items be returned after the time period mentioned in the seller's Returns Policy?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>No, sellers will not be able to accept returns after the time period mentioned in the seller's Returns Policy.</p>
+                </div>
+
+
+<hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">Can I remove my personal information?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Once you are verified, it is valid till you delete your account. If you have interacted with any buyer on the platform, we reserve the right to retain your personal details for a reasonable time as required by law. Rest assured, your information is totally safe with us and will not be shared with anyone else.</p>
+                </div>
+ 
+            </div>
+        
+                </div>
+            </div>
+        </section>
+    </main>
+
+  </div>
+
+  <div id="SellerFAQs" class="w3-container city" style="display:none">
+   <main>
+        <h1 class="faq-heading"></h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">What items can I sell on Farmer's Touch</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>You can sell all types of fruits, vegetables and crops.</p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">How to sell products?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Follow the sellers guide mentioned at home page</p>
+                </div>
+
+
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">How Can I Increase Crop Yeild</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>The ways to increase crop yeilds:
+                        1.Get Good Quality seeds
+                        2.Proper irrigation
+                        3.Using Appropiate Fertilizers and Pesticides</p>
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">How can I cancel my account</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+.</p>
+  </div>
+
+  <div id="GeneralQueries" class="w3-container city" style="display:none">
+    <main>
+        <h1 class="faq-heading"></h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">What items can i sell on Farmer's Touch</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">How can I register on Farmer's Touch</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>You can click here to Register your self on Farmer's Touch <a href="login.html"></a></p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+               <h1 class="faq-page">How can I cancel my account</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+.</p>
+  </div>
+
+ <div id="TrustandSafety" class="w3-container City" style="display:none">
+   
+   <div id="LegalandPrivacyInformation" class="w3-container city" style="display:none">
+</div>
+
+
+
+ 
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+<script>
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
+
+
+   
+</body>
+</html>
+
